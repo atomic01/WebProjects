@@ -1,0 +1,55 @@
+.background_picture {
+    animation: slide 120s 8s infinite;
+    background-size:100% 100%;
+}
+
+@keyframes slide {
+    8.33%{
+        background: url(../assets/NewYork.jpg);
+        background-size:100% 100%;
+    }
+    16.66%{
+        background: url(../assets/saopaolo.jpg);
+        background-size:100% 100%;
+    }
+    24.99%{
+        background: url(../assets/seoul.jpg);
+        background-size:100% 100%;
+    }
+    33.32%{
+        background: url(../assets/mexicocity.jpg);
+        background-size:100% 100%;
+    }
+    41.65%{
+        background: url(../assets/osaka.jpg);
+        background-size:100% 100%;
+    }
+    49.98%{
+        background: url(../assets/manila.jpg);
+        background-size:100% 100%;
+    }
+    58.31%{
+        background: url(../assets/Mumbai.jpg);
+        background-size:100% 100%;
+    }
+    66.64%{
+        background: url(../assets/delhi.jpg);
+        background-size:100% 100%;
+    }
+    74.97%{
+        background: url(../assets/jakarta.jpg);
+        background-size:100% 100%;
+    }
+    83.30%{
+        background: url(../assets/lagos.jpg);
+        background-size:100% 100%;
+    }
+    91.33%{
+        background: url(../assets/kolkata.jpg);
+        background-size:100% 100%;
+    }
+    100%{
+        background: url(../assets/tokyo.jpg);
+        background-size:100% 100%;
+    }
+}

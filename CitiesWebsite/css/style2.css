@@ -1,0 +1,491 @@
+html {
+    height: 100%;
+}
+
+body {
+    margin:0;
+    height: 100;
+    background: #222831;      
+}
+
+@media screen and (max-width:709px) {
+    body {
+        display: none;
+    }
+}
+
+img {
+    height: 100%;
+    width: 100%;
+}
+
+p {
+    color: white;
+    font-weight: 400;
+    font-size: 20;
+    letter-spacing: 1px;
+    margin-left:20px;
+    margin-right:20px;
+    height: 80%;
+    width: 80%;
+}
+
+h1 {
+    font-size: 30px;
+    font-weight: 700;
+    margin-left: 5%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color:#212121;
+}
+
+h2 {
+    color: white;
+    font-weight: 400;
+    font-size: 50;
+    letter-spacing: 2px;
+}
+
+h3 {
+    color: white;
+    font-weight: 200;
+    font-size: 15;
+    letter-spacing: 2px;
+}
+
+a {
+    text-decoration: none;
+    color:#212121;
+    letter-spacing: 1px;
+    font-size: 20px;
+    padding-left:10px;
+    padding-right:10px;
+    padding-top:36px;
+    padding-bottom:37px;
+}
+
+a:hover {
+    background-color:#e6e6e6;
+}
+
+h1:hover {
+    cursor:pointer;
+}
+
+.header_row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color:rgba(255, 255, 255, 0.95);
+    padding: 0px;
+}
+
+.background_picture img{
+    position: absolute;
+    top: 100px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    margin-top: -100px;
+}
+
+.headline {
+    position: absolute;
+    text-align: center;
+    left: 0;
+    top: 81.35%;
+    width: 100%;    
+    z-index:-1;
+}
+
+.headline h2 {
+    background: black;
+    opacity: 0.85;
+    padding-top: 22px;
+    padding-bottom: 20px;
+}
+
+.header_row ul {
+    margin: 0px;
+    margin-right: 5%;
+    padding: 0px;
+    list-style: none;
+}
+   
+.header_row ul li {
+    float: left;
+    text-align: center;
+}
+   
+.header_row ul li a {
+    display: block;
+}
+   
+.header_row ul li a:hover {
+    background-color:#e6e6e6;
+}
+
+.left_arrow, .right_arrow {
+    position: absolute;
+    width: 75px;
+    height : 75px;
+    transition: 0.5s;
+    float: left;
+    box-shadow: -3px 3px 0 rgba(255, 255, 255, 0.5);
+    cursor:pointer;
+}
+
+.left_arrow { 
+    top: 50%;
+    left: 4%;
+    transform: rotate(45deg);
+}
+.right_arrow {
+    top: 50%;
+    right: 4%;
+    transform: rotate(225deg);
+}
+
+.left_arrow:hover, .right_arrow:hover {
+    box-shadow: -2px 2px 0 rgba(255, 255, 255, 1);
+}
+
+.main_container {
+    float:left; 
+    width: 100%;
+    display: block;
+    margin-top: 780px;
+    box-sizing: border-box; 
+}
+
+.city_name {
+    position: absolute;
+    text-align: center;
+    left: 0;
+    top: 30%;
+    width: 100%;
+}
+
+.city_info {
+    position: relative;
+    float: left;
+    overflow: hidden;
+    align-items: center;
+    height: 720%;
+    width: 33.33333%;
+    text-align: center;
+    z-index: -1;
+    margin-bottom: 50px;
+}
+
+.city_info img{
+    height: 50%;
+    width: 97%;
+}
+
+.city_info a {
+    padding-left: 0px; 
+    padding-right: 0px; 
+    padding-top: 0px; 
+    padding-bottom: 0px;
+    color: white;
+    font-weight: 400;
+    font-size: 50;
+    letter-spacing: 2px;
+}
+
+.city_name:hover{
+    cursor: pointer;
+}
+
+#footer {
+    width: 100%;
+    float: left;
+    background: #222831;
+    padding: 1em 0 1em;
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);;
+    margin-top: 50px;
+}
+
+@media only screen and (min-width:1920px) {
+    .main_container{
+        margin-top: 56.5%;
+    }
+    .background_picture img{
+        height: 100%;        
+    }
+    .left_arrow, .right_arrow{
+        top: 50%;
+    }
+    .city_info {
+        width: 25%;
+    }
+    .headline {
+        top: 88%;
+    } 
+    h1 {
+        font-size: 35px;
+    }
+    .headline h2 {
+        font-size: 50px;
+    }   
+    .header_row a {
+        font-size: 30px;
+    }
+}   
+
+@media only screen and (max-width:1080px) {
+    .headline {
+        top:87%;
+    }
+    h1 {
+        font-size: 20px;
+    }
+    .headline h2 {
+        font-size: 30px;
+    }   
+}   
+
+@media only screen and (max-width:869px) {
+    .headline {
+        top:89%;
+    }
+    h1 {
+        font-size: 15px;
+    }
+    .headline h2 {
+        font-size: 25px;
+    }
+    .header_row a {
+        font-size: 15px;
+    }
+    .city_info {
+        width: 50%;
+    }  
+}   
+
+@media only screen and (max-width:720px) {
+    .headline {
+        top:89%;
+    }
+    h1 {
+        font-size: 15px;
+    }
+    .headline h2 {
+        font-size: 25px;
+    }
+    .header_row a {
+        font-size: 15px;
+    }
+    .city_info {
+        width: 50%;
+    }
+    .main_container{
+        margin-top: 86%;
+    }
+    .background_picture img{
+        height: 80%;        
+    }
+    .headline {
+        top: 68%;
+    }
+    .left_arrow, .right_arrow{
+        top: 35%;
+    }
+       
+}   
+
+
+@media only screen and (max-device-width:480px){
+    .main_container{
+        margin-top: 106%;
+    }
+    .background_picture img{
+        height: 60%;        
+    }
+    .left_arrow, .right_arrow{
+        top: 30%;
+    }
+    .headline {
+        top: 54%;
+    }
+    .city_info {
+        width: 50%;
+    }
+    h1 {
+        font-size: 20px;
+    }
+    .headline h2 {
+        font-size: 30px;
+    }   
+}
+
+@media only screen and (max-device-width:667px) and (orientation: landscape) {
+    .main_container{
+        margin-top: 56%;
+    }
+    .background_picture img{
+        height: 100%;        
+    }
+    .left_arrow, .right_arrow{
+        top: 50%;
+    }
+    .headline {
+        top: 82%;
+    }
+    .city_info {
+        width: 50%;
+    }
+    h1 {
+        font-size: 20px;
+    }
+    .headline h2 {
+        font-size: 30px;
+    }      
+}
+
+@media only screen and (device-width:600px){
+    .main_container{
+        margin-top: 104%;
+    }
+    .background_picture img{
+        height: 65%;        
+    }
+    .left_arrow, .right_arrow{
+        top: 35%;
+    }
+    .city_info {
+        width: 50%;
+    }
+    .headline {
+        top: 59%;
+    } 
+    h1 {
+        font-size: 20px;
+    }
+    .headline h2 {
+        font-size: 30px;
+    }   
+}
+
+@media only screen and (device-width:768px){
+    .main_container{
+        margin-top: 86%;
+    }
+    .background_picture img{
+        height: 65%;        
+    }
+    .left_arrow, .right_arrow{
+        top: 35%;
+    }
+    .city_info {
+        width: 50%;
+    }
+    .headline {
+        top: 57%;
+    } 
+    h1 {
+        font-size: 20px;
+    }
+    .headline h2 {
+        font-size: 30px;
+    }   
+}
+
+@media only screen and (device-width:960px) and (orientation:landscape) {
+    .main_container{
+        margin-top: 62.5%;
+    }
+    .background_picture img{
+        height: 100%;        
+    }
+    .left_arrow, .right_arrow{
+        top: 50%;
+    }
+    .city_info {
+        width: 33.3333%;
+    }
+    .headline {
+        top: 84%;
+    } 
+    h1 {
+        font-size: 20px;
+    }
+    .headline h2 {
+        font-size: 30px;
+    }   
+}
+
+@media only screen and (device-width:1024px){
+    .main_container{
+        margin-top: 100%;
+    }
+    .background_picture img{
+        height: 75%;        
+    }
+    .left_arrow, .right_arrow{
+        top: 35%;
+    }
+    .headline {
+        top: 67.7%;
+    } 
+    h1 {
+        font-size: 20px;
+    }
+    .headline h2 {
+        font-size: 30px;
+    }   
+}
+
+@media only screen and (device-width:1024px) and (orientation:landscape) {
+    .main_container{
+        margin-top: 75%;
+    }
+    .background_picture img{
+        height: 100%;        
+    }
+    .left_arrow, .right_arrow{
+        top: 50%;
+    }
+    .city_info {
+        width: 33.3333%;
+    }
+    .headline {
+        top: 87%;
+    } 
+    h1 {
+        font-size: 20px;
+    }
+    .headline h2 {
+        font-size: 30px;
+    }   
+}
+
+@media only screen and (device-width:1366px) and (orientation:landscape) {
+    .main_container{
+        margin-top: 75%;
+    }
+    .background_picture img{
+        height: 100%;        
+    }
+    .left_arrow, .right_arrow{
+        top: 50%;
+    }
+    .city_info {
+        width: 33.3333%;
+    }
+    .headline {
+        top: 90.5%;
+    } 
+    h1 {
+        font-size: 20px;
+    }
+    .headline h2 {
+        font-size: 30px;
+    }   
+}   

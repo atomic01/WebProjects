@@ -1,0 +1,714 @@
+html {
+    height: 100%;
+}
+
+@media screen and (max-width:709px) {
+    body {
+        display: none;
+    }
+}
+
+body {
+    margin:0;
+    height: 100;
+    background: #222831;    
+}
+
+h1 {
+    font-size: 30px;
+    font-weight: 700;
+    margin-left: 5%;    
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color:#212121;
+}
+
+h2 {
+    color: white;
+    font-weight: 400;
+    font-size: 50;
+    letter-spacing: 2px;
+}
+
+h3 {
+    color: white;
+    font-weight: 200;
+    font-size: 15;
+    letter-spacing: 2px;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color:#212121;
+    letter-spacing: 1px;
+    font-size: 20px;
+    padding-top:36px;
+    padding-bottom:37px;  
+    padding-left: 10px;
+    padding-right: 10px;   
+}
+
+.header_row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    background-color:rgba(255, 255, 255, 0.95);
+    padding: 0px;
+}
+
+.header_row ul {
+    margin: 0px;
+    margin-right: 5%;
+    padding: 0px;
+    list-style: none;
+}
+   
+.header_row ul li {
+    float: left;
+    text-align: center;
+}
+   
+.header_row ul li a {
+    display: block;
+}
+   
+.header_row ul li a:hover {
+    background-color:#e6e6e6;
+}
+
+.background_picture{
+    position: absolute;
+    top: 100px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    margin-top: -100px;
+    background: url(../assets/seoul.jpg) no-repeat;
+    background-size:100% 100%;
+}
+
+.headline {
+    position: absolute;
+    text-align: center;
+    left: 0;
+    top: 81.35%;
+    width: 100%;   
+    z-index:-1;
+}
+
+.headline h2 {    
+    background: black;
+    opacity: 0.85;
+    padding-top: 22px;
+    padding-bottom: 20px;
+}
+
+.main_container {
+    float:left; 
+    width: 100%;
+    display: block;
+    margin-top: 759px;
+    box-sizing: border-box;
+}
+
+.city_info {
+    position: relative;
+    float: left;
+    overflow: hidden;
+    align-items: center;
+    margin: 0 auto;
+    height: 300%;
+    width: 33.33333%;
+    text-align: center;
+}
+
+.city_info a {
+    padding-left: 0px; 
+    padding-right: 0px; 
+    padding-top: 0px; 
+    padding-bottom: 0px;
+    color: white;
+    font-weight: 400;
+    font-size: 50;
+    letter-spacing: 2px;  
+}
+
+.city_info:hover .city_picture img{
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(80%);
+    transform: scale(1.08);
+}
+
+.city_picture img {
+    transition: 0.4s ease;    
+}
+
+.city_name {
+    position: absolute;
+    text-align: center;
+    left: 0;
+    top: 30%;
+    width: 100%;
+}
+
+.city_name:hover{
+    cursor: pointer;
+   
+}
+
+.footer_info h3 {
+    color: white;
+    font-weight: 200;
+    font-size: 50;
+    letter-spacing: 2px;
+}
+
+.footer_info h4 {
+    color: white;
+    font-weight: 200;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+.footer_info .box {
+    float:left;
+    width: 38%;
+    margin-left: 6%;
+}
+
+.footer_info p {
+    color: white;
+    font-weight: 200;
+    font-size: 20;
+    letter-spacing: 1px;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+.fa-youtube {
+    background: #bb0000;
+    color: white;
+}
+
+.fa-instagram {
+    background: #125688;
+    color: white;
+}
+
+#footer {
+    width: 100%;
+    float: left;
+    background: #222831;
+    padding: 1em 0 1em;
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    margin-top: 150px;
+}
+
+.left_arrow, .right_arrow {
+    position: absolute;
+    width: 75px;
+    height : 75px;
+    transition: 0.5s;
+    float: left;
+    box-shadow: -3px 3px 0 rgba(255, 255, 255, 0.5);
+    cursor:pointer;
+}
+
+.community_headline {
+    margin-top: 10%;
+}
+
+.left_arrow {
+    top: 50%;
+    left: 4%;
+    transform: rotate(45deg);
+}
+
+.right_arrow {
+    top: 50%;
+    right: 4%;
+    transform: rotate(225deg);
+}
+
+.left_arrow:hover, .right_arrow:hover {
+    box-shadow: -2px 2px 0 rgba(255, 255, 255, 1);
+}
+
+.community_headline h1{
+    color: white;
+    font-weight: 400;
+    font-size: 50;
+    letter-spacing: 2px;
+}
+
+.citybox h5{
+    margin:0;
+    color: white;
+    font-weight: 300;
+    font-size: 30;
+    letter-spacing: 1px;
+    padding: 10px 10px;
+}
+
+.citybox {
+    
+    margin-left: 7%;
+    padding: 10px 10px;
+    margin-right: 7%;
+   /* border-bottom: 1px solid rgba(255, 255, 255, 0.1);*/
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.citybox h5:hover {
+    cursor: pointer;
+}
+
+.commentarea {
+    display:none;
+    position:relative;
+}
+
+.commentarea input, .commentarea textarea {
+    z-index: -1;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+	padding: 8px 10p;	
+	outline: 0;
+}
+
+.commentarea textarea {
+    padding: 5px;
+    width: 60%;
+    height: 75%;
+    background: #222831;
+    color:white;
+    resize:none;
+    overflow:hidden;
+    font-size: 17px;
+}
+
+.commentarea input {
+    padding: 5px;
+    width: 20%;
+    height: 40%;
+    background: #222831;
+    color:white;
+    font-size: 17px;
+}
+
+.button {
+    z-index: -1;
+    background-color: #555555;
+    border: 1px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.button:hover {
+    cursor:pointer;
+}
+
+@media only screen and (min-width:1920px) {
+    .main_container{
+        margin-top: 56.5%;
+    }
+    .background_picture img{
+        height: 100%;        
+    }
+    .left_arrow, .right_arrow{
+        top: 50%;
+    }
+    .city_info {
+        width: 25%;
+    }
+    .headline {
+        top: 88%;
+    } 
+    h1 {
+        font-size: 35px;
+    }
+    .headline h2 {
+        font-size: 50px;
+    }   
+    .header_row a {
+        font-size: 30px;
+    }
+}   
+
+@media only screen and (max-width:1080px) {
+    .headline {
+        top:87%;
+    }
+    h1 {
+        font-size: 20px;
+    }
+    .headline h2 {
+        font-size: 30px;
+    }  
+    .fa {
+        padding: 15px;
+        font-size: 20px;
+        width: 34px;
+    } 
+}     
+
+@media only screen and (max-width:869px) {
+    .fa {
+        padding: 10px;
+        font-size: 10px;
+        width: 17px;
+    } 
+    .headline {
+        top:89%;
+    }
+    h1 {
+        font-size: 15px;
+    }
+    .headline h2 {
+        font-size: 25px;
+    }
+    .header_row a {
+        font-size: 15px;
+    }
+    .city_info {
+        width: 50%;
+    }
+    .community_headline {
+        margin-top: 15%;
+    }    
+}   
+
+@media only screen and (max-width:720px) {
+    .headline {
+        top:89%;
+    }
+    h1 {
+        font-size: 15px;
+    }
+    .headline h2 {
+        font-size: 25px;
+    }
+    .header_row a {
+        font-size: 15px;
+    }
+    .city_info {
+        width: 50%;
+    }
+    .main_container{
+        margin-top: 86%;
+    }
+    .background_picture img{
+        height: 80%;        
+    }
+    .headline {
+        top: 68%;
+    }
+    .left_arrow, .right_arrow{
+        top: 35%;
+    }
+    .community_headline {
+        margin-top: 15%;
+    }  
+}   
+
+@media only screen and (max-device-width:480px){
+    .main_container{
+        margin-top: 106%;
+    }
+    .background_picture img{
+        height: 60%;        
+    }
+    .left_arrow, .right_arrow{
+        top: 30%;
+    }
+    .headline {
+        top: 54%;
+    }
+    .city_info {
+        width: 50%;
+    }
+    h1 {
+        font-size: 20px;
+    }
+    .headline h2 {
+        font-size: 30px;
+    }   
+}
+
+@media only screen and (max-device-width:667px) and (orientation: landscape) {
+    .main_container{
+        margin-top: 56%;
+    }
+    .background_picture img{
+        height: 100%;        
+    }
+    .left_arrow, .right_arrow{
+        top: 50%;
+    }
+    .headline {
+        top: 82%;
+    }
+    .city_info {
+        width: 50%;
+    }
+    h1 {
+        font-size: 20px;
+    }
+    .headline h2 {
+        font-size: 30px;
+    }   
+}
+
+@media only screen and (device-width:600px){
+    .main_container{
+        margin-top: 104%;
+    }
+    .background_picture img{
+        height: 65%;        
+    }
+    .left_arrow, .right_arrow{
+        top: 35%;
+    }
+    .city_info {
+        width: 50%;
+    }
+    .headline {
+        top: 59%;
+    } 
+    h1 {
+        font-size: 20px;
+    }
+    .headline h2 {
+        font-size: 30px;
+    }   
+}
+
+@media only screen and (device-width:768px){
+    .main_container{
+        margin-top: 86%;
+    }
+    .background_picture img{
+        height: 65%;        
+    }
+    .left_arrow, .right_arrow{
+        top: 35%;
+    }
+    .city_info {
+        width: 50%;
+    }
+    .headline {
+        top: 57%;
+    } 
+    h1 {
+        font-size: 20px;
+    }
+    .headline h2 {
+        font-size: 30px;
+    }   
+}
+
+@media only screen and (device-width:960px) and (orientation:landscape) {
+    .main_container{
+        margin-top: 62.5%;
+    }
+    .background_picture img{
+        height: 100%;        
+    }
+    .left_arrow, .right_arrow{
+        top: 50%;
+    }
+    .city_info {
+        width: 33.3333%;
+    }
+    .headline {
+        top: 84%;
+    } 
+    h1 {
+        font-size: 20px;
+    }
+    .headline h2 {
+        font-size: 30px;
+    }   
+}
+
+@media only screen and (device-width:1024px){
+    .main_container{
+        margin-top: 100%;
+    }
+    .background_picture img{
+        height: 75%;        
+    }
+    .left_arrow, .right_arrow{
+        top: 35%;
+    }
+    .headline {
+        top: 67.7%;
+    } 
+    h1 {
+        font-size: 20px;
+    }
+    .headline h2 {
+        font-size: 30px;
+    }   
+}
+
+@media only screen and (device-width:1024px) and (orientation:landscape) {
+    .main_container{
+        margin-top: 75%;
+    }
+    .background_picture img{
+        height: 100%;        
+    }
+    .left_arrow, .right_arrow{
+        top: 50%;
+    }
+    .city_info {
+        width: 33.3333%;
+    }
+    .headline {
+        top: 87%;
+    } 
+    h1 {
+        font-size: 20px;
+    }
+    .headline h2 {
+        font-size: 30px;
+    }   
+}
+
+@media only screen and (device-width:1366px) and (orientation:landscape) {
+    .main_container{
+        margin-top: 75%;
+    }
+    .background_picture img{
+        height: 100%;        
+    }
+    .left_arrow, .right_arrow{
+        top: 50%;
+    }
+    .city_info {
+        width: 33.3333%;
+    }
+    .headline {
+        top: 90.5%;
+    } 
+    h1 {
+        font-size: 20px;
+    }
+    .headline h2 {
+        font-size: 30px;
+    }   
+}   
+
+.commentarea input, textarea, button{
+    display:block;
+    margin:5px 5px 10px 3%;
+}
+
+.comments_list{
+    height:auto;
+    font-size: 13px;
+    margin: 10px 5px 5px 5px;
+    color: white;
+}
+ ul.comments_holder_ul{
+     list-style-type: none;
+     width: auto;
+     height:auto;
+     overflow: hidden;
+ }
+
+ li.comment_holder{
+     padding-bottom: 5px;
+     width:60%;
+ }
+
+ .comments_list h3{
+     font-size: 25px;
+ }
+
+ .comments_list p{
+     font-size: 20px;
+ }
+
+ ul.comments_holder_ul li.comment_holder:hover{
+    background: #3f4a5a;
+ }
+
+.comment_holder h3{
+    display: inline-block;
+     height: 25px;
+     margin: 0 0 0 5px;
+ }
+
+ .comment_holder p{
+     margin: 15px 0 15px 30px;
+  
+ }
+
+
+ .delete_button a{
+    font-size:20px;
+    color: white;
+}
+
+.comment_button_holder {
+    display:inline-block;
+    visibility: visible;
+    position: relative;
+    user-select: none;
+    left:5%;
+}
+
+.comment_button_holder ul{
+    list-style-type: none;
+}
+
+.comment_holder:hover .comment_button_holder {
+    visibility: visible;
+}
+
+.comment_button_holder .button{
+    padding: 8px 16px;
+    font-size: 8px;
+}
+
+
+
+
+

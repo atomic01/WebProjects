@@ -53,7 +53,6 @@ The application provides both:
 |----------------|-------------|
 | `source/` | Full implementation code for the web application |
 | `Proof of coursework.pdf` | Demonstrates the system in action with screenshots and explanations |
-| `Critical assessment.pdf` | Contains evaluation and analysis of the coursework |
 | `README.txt` | Original project documentation from submission |
 
 ---

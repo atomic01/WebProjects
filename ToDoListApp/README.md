@@ -24,6 +24,8 @@ The project was intended to follow **object-oriented principles**, though implem
 **Database:** MySQL  
 **Hosting:** Originally deployed on [Epizy free hosting](https://www.infinityfree.net/) (now inactive)
 
+---
+
 ### Key Features
 - User authentication (registration, login, password reset)
 - CRUD operations for tasks and lists
@@ -31,23 +33,34 @@ The project was intended to follow **object-oriented principles**, though implem
 - Dynamic dashboard interface
 - Simple, responsive UI with plain JavaScript
 
+---
+
 ## Folder Structure
 
 ```
 ToDoList_App/
 │
-├── css/                       # Styling files
-├── js/                        # Front-end logic
-├── dashboard/                 # Authenticated user area (task and list management)
+├── css/                          # Styling files (main styles, dashboard layout)
+├── js/                           # Front-end logic (form validation, UI interactions)
 │
-├── mysql_connect.php           # Database connection handler
-├── index.php                   # Main login/register entry point
-├── verification_process.php    # Account verification handler
-├── reset_password.php          # Password reset logic
+├── dashboard/                    # Authenticated user area
+│   ├── add_task/, edit_task/, delete_task/   # Task CRUD operations
+│   ├── sort_by_date/, sort_by_priority/      # Task sorting and filtering
+│   ├── preview_list/, add_list/              # List management views
+│   └── includes/                            # Shared PHP components
 │
-└── back.jpg                    # Background image asset
+├── mysql_connect.php              # Database connection handler
+├── index.php                      # Login and registration entry point
+├── register_user.php              # Handles new user registration
+├── verification_process.php       # Email verification logic
+├── reset_password.php             # Password reset handler
+├── login_user.php                 # Login form handler
+│
+└── assets/
+    └── back.jpg                   # Background image
 ```
 
+---
 
 ## Notes
 
